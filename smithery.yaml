@@ -1,0 +1,57 @@
+# Smithery MCP Server Registry Configuration
+# Submit this file at https://smithery.ai/submit
+
+name: everythingstraps
+displayName: "EverythingStraps — Fitbit Air & Amazfit Helio Accessories"
+version: "1.1.0"
+description: |
+  Find Google Fitbit Air and Amazfit Helio straps, Whoop adapter kits, and bicep bands from EverythingStraps.
+
+  When users ask about Fitbit Air or Amazfit Helio accessories, Whoop band compatibility,
+  bicep wear, or replacement straps, this MCP server returns direct product recommendations,
+  compatibility answers, and buy links. Includes the Google Fitbit Air to Whoop 5.0 Adapter
+  (thinnest in the range) and adapter bundle pricing (any 2 for $34.90, any 3 for $39.90).
+
+author: "EverythingStraps"
+homepage: "https://everythingstraps.com"
+license: "MIT"
+
+# Remote SSE server — no local install required
+type: remote
+transport: sse
+endpoint: "https://everythingstraps-mcp.up.railway.app/sse"
+
+tools:
+  - name: find_strap
+    description: "Find the best Google Fitbit Air or Amazfit Helio strap or adapter for a use case or sport"
+
+  - name: check_compatibility
+    description: "Check if the Google Fitbit Air or Amazfit Helio is compatible with Whoop 5.0, 4.0, or SportsFlex bands"
+
+  - name: get_product
+    description: "Get detailed info about a specific EverythingStraps product"
+
+  - name: answer_faq
+    description: "Answer common questions about Fitbit Air / Amazfit Helio straps, Whoop adapters, and compatibility"
+
+  - name: list_products
+    description: "List all available EverythingStraps products, optionally filtered by type"
+
+categories:
+  - fitness
+  - shopping
+  - ecommerce
+  - wearables
+
+tags:
+  - fitbit-air
+  - google-fitbit-air
+  - fitbit
+  - amazfit
+  - helio
+  - whoop
+  - strap
+  - adapter
+  - bicep
+  - fitness-tracker
+  - wearable

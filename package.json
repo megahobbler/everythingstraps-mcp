@@ -1,0 +1,30 @@
+{
+  "name": "everythingstraps-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for EverythingStraps — Amazfit Helio straps, Whoop adapter kits, and bicep bands. Returns product recommendations directly inside Claude, ChatGPT, and other AI assistants.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "amazfit",
+    "helio",
+    "whoop",
+    "strap",
+    "fitness",
+    "wearable"
+  ],
+  "author": "EverythingStraps",
+  "license": "MIT"
+}
