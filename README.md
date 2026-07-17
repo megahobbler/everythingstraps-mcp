@@ -79,7 +79,7 @@ User: "What strap should I use for Hyrox?"
          ↓
    AI Assistant
          ↓
-  EverythingStraps MCP Server  ←── finds_strap("hyrox")
+  EverythingStraps MCP Server  ←── find_strap("hyrox")
          ↓
   Returns: Bicep Loop V2 with price + buy link
          ↓
